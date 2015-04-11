@@ -33,7 +33,7 @@ makeCacheMatrix <- function(x = matrix()) {
 ## and stores it in the CacheMatrix if it has not been calculated already.
 
 cacheSolve <- function(x, ...) {
-        xinv <- x$getinverse() ## pulls value of "inv" from the CacheMatrix.
+        xinv <- x$getinverse() ## pulls value of "xinv" from the CacheMatrix.
         if(!is.null(xinv)) { ## Checks if the inverse has been calculated.
                 message("getting cached data") ##Returns a message to console.
                 return(xinv) ## Returns the pre-calculated inverse.
